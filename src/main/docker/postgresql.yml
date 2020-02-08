@@ -1,0 +1,11 @@
+version: '2'
+services:
+  restapp-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/RestApp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=RestApp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
